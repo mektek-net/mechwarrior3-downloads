@@ -1,0 +1,26 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\DirectPlay\Applications\MechWarrior 3]
+"Guid"="{461E6561-563C-11d3-95AF-0060089877F0}"
+"File"="mech3.exe"
+"CommandLine"=""
+"Path"="C:\\MicroProse\\MechWarrior3\\"
+"CurrentDirectory"="C:\\MicroProse\\MechWarrior3\\"
+
+[HKEY_LOCAL_MACHINE\Software\MicroProse]
+
+[HKEY_LOCAL_MACHINE\Software\MicroProse\MechWarrior 3]
+
+[HKEY_LOCAL_MACHINE\Software\MicroProse\MechWarrior 3\1.0]
+"Program"="C:\\MicroProse\\MechWarrior3\\"
+"Version"="1.2"
+"InstallOptions"=dword:00040004
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Shutdown]
+"FastReboot"="0"
+"SetupProgramRan"=dword:00000002
+
+[HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Shutdown\ExclusionList]
+"DVP"=""
+"NAVEX"=""
+

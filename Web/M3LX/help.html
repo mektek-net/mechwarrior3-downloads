@@ -1,0 +1,121 @@
+<HEAD><TITLE>Charity-Ware Software File Download</TITLE></HEAD>
+<BODY TEXT="BLACK" LINK="#8B0000" ALINK="#FF0000" VLINK="#B22222" BGCOLOR="#FFF6FO">
+<FONT FACE="arial,verdana"><SMALL>
+<HR><HR><H2 ALIGN="CENTER">Download Program<BR>Help File</H2><HR><HR>
+<BR>
+<BLOCKQUOTE>This help file is designed to answer the questions that may arise when you are filling in forms to add, remove or update files with this program.</BLOCKQUOTE>
+<B>Contents</B>
+<OL>
+<LI><A HREF="#OVER">Overview</A>
+<LI><A HREF="#WHAT">What is a file ?</A>
+<LI><A HREF="#ADD">Adding a File</A>
+<LI><A HREF="#REMOVE">Removing a File</A>
+<LI><A HREF="#UPDATE">Updating a File</A>
+<LI><A HREF="#LOG">Viewing the download log.</A>
+<LI><A HREF="#PLACE">Where do I place my files on the server ?</A>
+<LI><A HREF="#INFO">What is the File Information Page ?</A>
+<LI><A HREF="#LINK">Linking to this program.</A>
+</OL>
+<HR>
+
+<A NAME="OVER">
+<B>Overview</B><BLOCKQUOTE>
+This program does not create your files for download nor does it FTP the files for you. This program is designed to force people to register to download a file.
+<P>This allows you better control over your website by allowing you to see who is downloading files. What files are being downloaded and when they are bing downloaded.
+<P>You can use this information to create more popular files or remove files that are of no interest.
+</BLOCKQUOTE>
+
+<A NAME="WHAT">
+<B>What is a File ?</B><BLOCKQUOTE>
+A file is any file on your computer. It can be a text file (.txt, etc), a regular document (.doc, .rtf, .pdf, etc) or similar, a program (.exe, .cgi, .pl), an image (.jpg, .gif, etc) or even a sound file (.wav, .midi, etc.).
+<P>Any type of file you have on your computer can be referenced by this program.
+</BLOCKQUOTE>
+
+<A NAME="ADD">
+<B>Adding a File</B><BR><I>http://www.yourdomain.com/cgi-bin/path/to/my_downloader.cgi?admin</I>
+<BLOCKQUOTE>You must add a file from the administration page of the program. You must fill in each of several fields that contain information to tell the viewer what the file is and tell the computer where to retrieve the file and it's information from. Here are each of the fields in detail:
+
+<DL>
+<DT><B>File Name</B>
+<DD>This is an alias name for your document. It is the name you want your document to be known by and bears no relation to the name of the file as it is saved on the computer. For example, if you had a document named "artists.doc" you could set the file name here as "Resources for Artists". Your site visitor would only see "Resources for Artists" but the program will reference this name to "artists.doc".
+<P>
+<DT><B>File Page</B>
+<DD>This is the information page for a file. What you need to put here is the path to the file information page, relative to the Root directory.<P>The Root directory is the directory in which your web sites opening HTML pages is located.<P>For example, if the information page for the file in question had a location on the server of:<BR>
+<CENTER><BIG><TT>http://www.yourdomain.com/files/info/artists/artists.html</TT></BIG></CENTER>
+The Root directory is <BIG><TT>"http://www.yourdomain.com/"</TT></BIG>.<BR>The file page location, relative to the root directory is <BIG><TT>files/info/artists/artists.html</TT></BIG>.<BR>So this is what you would enter in the File Information Page field on the Add File form.<P>Another example for a personal or non-virtual domain page would be:<BR>
+<CENTER><BIG><TT>http://www.thedomain.com/~my_site/files/info/artists/artists.html</TT></BIG></CENTER>
+The Root directory is <BIG><TT>"http://www.thedomain.com/~my_site/"</TT></BIG>.<BR>The file page location, relative to the root directory is <BIG><TT>files/info/artists/artists.html</TT></BIG>.<BR>So this is what you would enter in the File Information Page field on the Add File form.
+<P>
+<DT><B>File Size</B>
+<DD>You must input the size of the file, in Kb. To find the size of your file, right click on that file in any dialogue box on your computer then choose properties. This will display the size of the file.
+<P>
+<DT><B>File Type</B>
+<DD>This field is so that the person downloading the file will know, beforehand, what they are receiving. If they are downloading a file ".pdf" they will need an Adobe Acrobat Reader to view the file. If they are downloading a ".ZIP" file, they will need WinZip or similar to unzip the file. Some of the more common extensions you will find here are:<BR>
+<CENTER><BIG><TT>.doc, .txt, .rtf, .pdf, .zip</TT></BIG></CENTER>
+<P>
+<DT><B>File Location</B>
+<DD>This is where the actual file that is being downloaded, is stored. This must be acurate or the file will not be downloaded by the viewer and they will receive a "File Not Found" error.<P>The data you enter here is the absolute path to the file to be downloaded, relative to the Root directory. Next to the input box you will see the Root directory displayed. It is from this point that you will enter the data. For example, if the file location were:<BR>
+<CENTER><BIG><TT>http://www.yourdomain.com/files/info/artists/artists.doc</TT></BIG></CENTER>
+The Root directory displayed is <BIG><TT>"http://www.yourdomain.com/"</TT></BIG>.<BR>The file location, relative to the root directory is <BIG><TT>files/info/artists/artists.doc</TT></BIG>.<BR>So this is what you would enter in the File Location field on the Add File form.<P>Another example for a personal or non-virtual domain page would be:<BR>
+<CENTER><BIG><TT>http://www.thedomain.com/~my_site/files/info/artists/artists.doc</TT></BIG></CENTER>
+The Root directory displayed is <BIG><TT>"http://www.thedomain.com/~my_site/"</TT></BIG>.<BR>The file location, relative to the root directory is <BIG><TT>files/info/artists/artists.doc</TT></BIG>.<BR>So this is what you would enter in the File Location field on the Add File form.
+<P>
+
+<DT><B>File Description</B>
+<DD>This is simply a description of the file, in your own words, that the viewer will see on the download page. Just type out a brief synopsis of the file. If there are several files the viewer is interested in, this will help prompt them to choose the correct files that they want.
+</DL>
+</BLOCKQUOTE>
+
+<A NAME="REMOVE">
+<B>Removing a File from the database</B><BR><I>http://www.yourdomain.com/cgi-bin/path/to/my_downloader.cgi?admin</I>
+<BLOCKQUOTE>
+To remove the file is quite easy. From the administration page, click on the radio button of the file you want to delete. Enter your UserID and your Password and then press submit.<P>The file will be deleted from the database.<P>You must note, however, that while the file <I>information</I> has been removed from the database, the file itself still exists on the server. You must manually remove this file using either FTP or Telnet. On the "Successful Removal" page you are presented with, there will be a warning that you must delete this file and the full URL of the file will be displayed for your use.
+</BLOCKQUOTE>
+
+<A NAME="UPDATE">
+<B>Updating a File</B><BR><I>http://www.yourdomain.com/cgi-bin/path/to/my_downloader.cgi?admin</I>
+<BLOCKQUOTE>
+It is quite easy to update information for a file in the database. Simply select the radio button for the file you want to update. Enter your UserID and your Password and then press submit.<P>The Update File page will be returned to you. This will show all the current information of the file along with data entry fields to change information. If you do not wish to alter a particular piece of informtion, leave that field alone and it won't be altered.<P>The fields are exactly the same as you will find in the <A HREF="#ADD">add file</A> form of the admin page and the same instructions apply.<P>If you do wish to change a field, either edit the content of that field or clear out the information in the field and start over again.<P>Once you have made the changes, enter your UserID and your Password and press Submit.
+</BLOCKQUOTE>
+
+<A NAME="LOG">
+<B>Viewing the Download Log</B><BR><I>http://www.yourdomain.com/cgi-bin/path/to/my_downloader.cgi?viewlog</I>
+<BLOCKQUOTE>
+The "viewlog" routine will display a list of who has downloaded what file and when they downloaded it. Each entry will link that persons name to their e-mail address if you wish to contact them. At present, this function lists all downloads in the order that they occured. Hopefully, the next major version of this program will provide a function for you to sort these details by date, time, file, etc.
+</BLOCKQUOTE>
+
+<A NAME="PLACE">
+<B>Where do I place my files on the server ?</B>
+<BLOCKQUOTE>
+You may place your files for download anywhere on your server below your Root directory. Each time you enter a new file, you will specify that files location on the server. See the above <A HREF="#ADD">add file</A> section for more information.
+</BLOCKQUOTE>
+
+<A NAME="INFO">
+<B>What is the File Information Page ?</B>
+<BLOCKQUOTE>
+The File Information Page is a page on your website that describes that file in detail. You can have a special page for this or it may be simply a page that mentions the file and what it is for.
+</BLOCKQUOTE>
+
+<A NAME="LINK">
+<B>Linking to this program</B>
+<BLOCKQUOTE>
+Anywhere in your website that you mention a file for download or tell people to go to the download page, you must use this link:<BR>
+<CENTER><BIG><TT>http://www.yourdomain.com/cgi-bin/path/to/my_downloader.cgi</TT></BIG></CENTER><BR>
+You may also make this a relative path within your website.<BR>
+<CENTER><BIG><TT>../../cgi-bin/path/to/my_downloader.cgi</TT></BIG></CENTER><BR>
+This will bring the viewer to the main download page that lists all the files that are available for download.
+</BLOCKQUOTE>
+<BR><BR>
+
+<CENTER><B>Use the Back button on your<BR>browser to return to the Admin/Update page</B>
+<BR><BR>
+<BR><BR>
+
+<SMALL><A HREF="http://www.thebeaches.to/
+jmwd/index.html">&copy; 1998, Jim Melanson Web Design</A><BR>
+Downloading maintained by <A HREF="http://www.thebeaches.to/
+jmwd/charity_ware/my_downloader.html">My Downloader V1.0
+</A><BR>Script Protection by
+<A HREF="http://www.thebeaches.to/
+jmwd/charity_ware/attack_guard.html">Attack Guard V1.0</A>
+</SMALL></CENTER></SMALL></FONT></BODY></HTML>
